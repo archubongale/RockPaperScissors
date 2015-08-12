@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="RspTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2015-08-12T22:49:40" hostname="epicodus-110.local" time="0.002">
+  <properties/>
+  <testcase name="checkWinner_ScissorsBeatsRock_true" classname="RspTest" time="0.002"/>
+  <testcase name="checkWinner_rockBeatsScissors_true" classname="RspTest" time="0.0"/>
+  <testcase name="checkWinner_PaperBeatsPaper_true" classname="RspTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
