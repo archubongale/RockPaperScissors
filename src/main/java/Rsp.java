@@ -14,7 +14,7 @@ public class Rsp{
 
     get("/", (request, response) -> {
            Map<String, Object> model = new HashMap<String, Object>();
-           model.put("templates/rockpaperscissor.vtl");
+           model.put("template","templates/rockpaperscissor.vtl");
            return new ModelAndView(model, layout);
      }, new VelocityTemplateEngine());
 
@@ -24,11 +24,11 @@ public class Rsp{
 
      String p1 = request.queryParams("Player1");
      String p2 = request.queryParams("Player2");
-     Boolean isplayer1Wins = isplayer1Wins(String p1, String p2);
+     Boolean isplayer1Wins = isplayer1Wins(p1, p2);
 
      model.put("isplayer1Wins", isplayer1Wins);
-      model.put("Player1", request.queryParams("Player1"));
-      model.put("Player2", request.queryParams("Player2"));
+      model.put("Player1", p1);
+      model.put("Player2", p2);
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
   }
